@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Pheedloop Test</title>
+     <!-- Disable tap highlight on IE -->
+     <meta name="msapplication-tap-highlight" content="no">
+     <link rel="icon" href="images/favicon.ico">
+   
+     <!-- Web Application Manifest -->
+     <link rel="manifest" href="manifest.json">
+   
+     <!-- Add to homescreen for Chrome on Android -->
+     <meta name="mobile-web-app-capable" content="yes">
+     <meta name="application-name" content="PheedloopTest">
+     <meta name="theme-color" content="#4285F4">
+     
+     <!-- Add to homescreen for Safari on iOS -->
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     <meta name="apple-mobile-web-app-title" content="PheedloopTest">
+     <meta name="apple-mobile-web-app-status-bar-style" content="#4285F4">
+ 
+     <link rel="stylesheet"
+    href="https://unpkg.com/material-components-web@0.39.3/dist/material-components-web.min.css" type="text/css">
+    <script src="https://unpkg.com/material-components-web@0.39.3/dist/material-components-web.js"></script>
+  
+    <!-- App Styling -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    <script src="/__/firebase/7.3.0/firebase.js"></script>
+    <script src ="scripts/app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+  <!--Top Bar-->
+  <header class="mdc-top-app-bar mdc-top-app-bar--short">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+       <span class="mdc-top-app-bar__title">PheedloopTest</span> </section>
+      </div>
+  </header>
+  <!--Start laying out grids-->
+  <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <!--Cell 1-->
+        <div class="mdc-layout-grid__cell">
+          <!--Card 1-->
+            <div class="mdc-card demo-card">
+                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                   <div class="demo-card__primary">
+                    <h2 id="eventname1" class="demo-card__title mdc-typography mdc-typography--headline6">Event 1</h2>
+                  </div>
+                  <div id="description1" class="demo-card__secondary mdc-typography mdc-typography--body2">Description 1</div>
+                  <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Speakers</h2>
+                  <div id="photo1" class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://66.media.tumblr.com/1ac19226d36fe33561e7d51837636d5f/tumblr_oq6kzxT6hK1s1hvbho7_250.png&quot;);"></div>
+                  <h3 id ="speaker1" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Speaker A</h3>
+                  <h3 id="bio1" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Bio A</h3>
+                  <h3 id="email1" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Email A</h3>
+                  <div id="photo2" class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://66.media.tumblr.com/1ac19226d36fe33561e7d51837636d5f/tumblr_oq6kzxT6hK1s1hvbho7_250.png&quot;);"></div>
+                  <h3 id ="speaker2" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Speaker B</h3>
+                  <h3 id="bio2" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Bio B</h3>
+                  <h3 id="email2" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Email B</h3>
+                  <div class="demo-card__primary">
+                     <!--Star Rating System Here-->
+                      <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Enjoyed the presentation? Leave a rating! </h2>
+                      <div class="mdc-card__actions">
+                          <div class="mdc-card__action-buttons">
+                            <div id="review1" class="stars1" data-rating1="0">
+                              <span class="star1">&nbsp;</span>
+                              <span class="star1">&nbsp;</span>
+                              <span class="star1">&nbsp;</span>
+                              <span class="star1">&nbsp;</span>
+                              <span class="star1">&nbsp;</span>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!--Cell 2-->
+        <div class="mdc-layout-grid__cell">
+           <!--Card 2-->
+           <div class="mdc-card demo-card">
+            <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                <div class="demo-card__primary">
+                    <h2 id="eventname2" class="demo-card__title mdc-typography mdc-typography--headline6">Event 2</h2>
+                  </div>
+                  <div id="description2" class="demo-card__secondary mdc-typography mdc-typography--body2">Description 2</div>
+                  <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Speakers</h2>
+              <div id="photo3" class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://66.media.tumblr.com/1ac19226d36fe33561e7d51837636d5f/tumblr_oq6kzxT6hK1s1hvbho7_250.png&quot;);"></div>
+              <h3 id="speaker3" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Speaker C:</h3>
+              <h3 id="bio3" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Bio C</h3>
+              <h3 id="email3" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Email C</h3>
+              <div id="photo4" class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://66.media.tumblr.com/1ac19226d36fe33561e7d51837636d5f/tumblr_oq6kzxT6hK1s1hvbho7_250.png&quot;);"></div>
+              <h3 id ="speaker4" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Speaker D</h3>
+              <h3 id="bio4" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Bio D</h3>
+              <h3 id="email4" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Email D</h3>
+            </div>
+            <!--Star Rating System Here-->
+            <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Enjoyed the presentation? Leave a rating! </h2>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <div id="review2" class="stars2" data-rating2="0">
+                  <span class="star2">&nbsp;</span>
+                  <span class="star2">&nbsp;</span>
+                  <span class="star2">&nbsp;</span>
+                  <span class="star2">&nbsp;</span>
+                  <span class="star2">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Cell 3-->
+        <div class="mdc-layout-grid__cell">
+           <!--Card 3-->
+           <div class="mdc-card demo-card">
+            <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                <div class="demo-card__primary">
+                  <!--Event Description and Title-->
+                    <h2 id="eventname3" class="demo-card__title mdc-typography mdc-typography--headline6">Event 3 </h2>
+                  <div id="description3" class="demo-card__secondary mdc-typography mdc-typography--body2">Description 3</div>
+                  <!--Speaker Data Begins Here-->
+                  <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Speakers</h2>
+                  </div>
+              <div id="photoA" class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://66.media.tumblr.com/1ac19226d36fe33561e7d51837636d5f/tumblr_oq6kzxT6hK1s1hvbho7_250.png&quot;);"></div>
+              <h3 id="speakerA" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Speaker A</h3>
+              <h3 id="bioA" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Bio A</h3>
+              <h3 id="emailA" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Email A</h3>
+              <div id="photoC" class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://66.media.tumblr.com/1ac19226d36fe33561e7d51837636d5f/tumblr_oq6kzxT6hK1s1hvbho7_250.png&quot;);"></div>
+              <h3 id="speakerC" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Speaker C:</h3>
+              <h3 id="bioC" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Bio C</h3>
+              <h3 id="emailC" class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">Email C</h3>
+            </div>
+             <!--Star Rating System Begins Here-->
+            <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Enjoyed the presentation? Leave a rating! </h2>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-buttons">
+                <div id="review3" class="stars3" data-rating3="0">
+                  <span class="star3">&nbsp;</span>
+                  <span class="star3">&nbsp;</span>
+                  <span class="star3">&nbsp;</span>
+                  <span class="star3">&nbsp;</span>
+                  <span class="star3">&nbsp;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </body>
+</html>

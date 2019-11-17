@@ -1,0 +1,26 @@
+.mdc-layout-grid {
+    margin-top:3%;
+}
+
+.mdc-top-app-bar{
+    background-color:#0377f7;
+}
+
+.star1, .star2, .star3 {
+    color: goldenrod;
+    font-size: 2.0rem;
+    padding: 0 1rem; /* space out the stars */
+  }
+  .star1::before, .star2::before, .star3::before{
+    content: '\2606';
+    cursor: pointer;
+  }
+  .star1:hover::before, .star2:hover::before, .star3:hover::before{
+    /* the :hover should come first */
+    content: '\2605';
+    color: #bada55;
+  }
+  .star1.rated::before,.star2.rated::before,.star3.rated::before{
+    /* the :hover should come first */
+    content: '\2605';
+  }
