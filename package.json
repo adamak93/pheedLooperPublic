@@ -19,7 +19,7 @@
   "dependencies": {
     "firebase-admin": "^8.7.0",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "rater-js": "^1.0.1",
     "twilio": "^3.37.0"
   }
